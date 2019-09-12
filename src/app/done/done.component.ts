@@ -15,6 +15,7 @@ export class DoneComponent implements OnInit {
   }
 
   onClick() {
+    console.log("ON CLICK");
     this.isSelected = !this.isSelected;
     this.click.emit({ newValue: this.isSelected });
   }
