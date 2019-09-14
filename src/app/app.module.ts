@@ -18,6 +18,8 @@ import { AppInputFormatDirective } from './app-input-format.directive';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { NewCourseFormComponent } from './new-course-form/new-course-form.component';
+import { PostsComponent } from './posts/posts.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { NewCourseFormComponent } from './new-course-form/new-course-form.compon
     PanelComponent,
     AppInputFormatDirective,
     ContactFormComponent,
-    NewCourseFormComponent
+    NewCourseFormComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { NewCourseFormComponent } from './new-course-form/new-course-form.compon
     FormsModule,
     MatCheckboxModule,
     MatExpansionModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     CoursesService
